@@ -87,16 +87,18 @@
 
 		<!-- SignUp Modal -->
 		<div  class="Login-class" id="SignUpPop">
-			<form name="SignUP" class="box"  action="POST" data-netlify="true">
+			<form name="SignUP" class="box"  method="post" action="#" data-netlify="true">
 	
 				<h1>SIGN UP</h1>
 		
-				<input type="text" placeholder="Username" required>
+				<input type="text" id="name" name="name-SignUp" placeholder="Username" required>
 		
-				<input type="email" placeholder="Email" required>
+				<input type="email" id="email" name="email-SignUp" placeholder="Email" required>
 		
-				<input type="password" placeholder="Password" required> 
+				<input type="password" id="pswd" name="pswd-SignUp" placeholder="Password" required> 
+				
 				<div data-netlify-recaptcha="true"></div>
+				
 				<input type="submit" value="Login">
 				<a href="#" id="Loglink">Already Registered? Login Here</a>
 			</form>
