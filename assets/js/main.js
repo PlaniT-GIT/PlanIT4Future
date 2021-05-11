@@ -8,12 +8,32 @@
 !(function($) {
   "use strict";
 
+$(document).ready(function(){
+  //dark-mode
+      const options = {
+        bottom: '64px', // default: '32px'
+        right: '25px', // default: '32px'
+        left: 'unset', // default: 'unset'
+        time: '0.3s', // default: '0.3s'
+        mixColor: '#fff', // default: '#fff'
+        backgroundColor: '#fff',  // default: '#fff'
+        buttonColorDark: '#100f2c',  // default: '#100f2c'
+        buttonColorLight: '#fff', // default: '#fff'
+        saveInCookies: true, // default: true,
+        label: '🌙', // default: ''
+        autoMatchOsTheme: true // default: true
+      }
+
+      const darkmode = new Darkmode(options);
+      darkmode.showWidget();
+
+});
   $(window).on('load', function() {
     if ($('#preloader').length) {
       $('#preloader').delay(100).fadeOut('slow', function() {
         $(this).remove();
       });
-    }
+    }    
   });
 
 
@@ -87,16 +107,7 @@ $(document).ready(function() {
 });
 
 //siping social media
- var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 'auto',
-      //centeredSlides: true,
-      spaceBetween: 10,
-      //mousewheel:true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-    });
+ 
 
 //SignUp Modal
 //$('#LoginPop').draggable();
@@ -147,28 +158,6 @@ $(document).ready(function() {
 
 
 
-
-//dark-mode
-const options = {
-  bottom: '64px', // default: '32px'
-  right: '25px', // default: '32px'
-  left: 'unset', // default: 'unset'
-  time: '0.3s', // default: '0.3s'
-  mixColor: '#fff', // default: '#fff'
-  backgroundColor: '#fff',  // default: '#fff'
-  buttonColorDark: '#100f2c',  // default: '#100f2c'
-  buttonColorLight: '#fff', // default: '#fff'
-  saveInCookies: true, // default: true,
-  label: '🌙', // default: ''
-  autoMatchOsTheme: true // default: true
-}
-
-const darkmode = new Darkmode(options);
-darkmode.showWidget();
-
-
-
-
   // Smooth scroll for the navigation menu and links with .scrollto classes
   var scrolltoOffset = $('#header').outerHeight() - 21;
   $(document).on('click', '.nav-menu a, .mobile-nav a, .scrollto', function(e) {
@@ -200,6 +189,8 @@ darkmode.showWidget();
         return false;
       }
     }
+    
+    
   });
 
   // Activate smooth scroll on page load with hash links in the url
@@ -339,4 +330,5 @@ darkmode.showWidget();
     aos_init();
   });
 
+  
 })(jQuery);
