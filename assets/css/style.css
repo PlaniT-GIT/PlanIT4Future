@@ -1,8 +1,5 @@
-/**
-* Template Name: Bootslander - v2.2.0
-* Template URL: https://bootstrapmade.com/bootslander-free-bootstrap-landing-page-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+/*
+PlanIt Web
 */
 
 /*--------------------------------------------------------------
@@ -53,8 +50,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
   width: 60px;
   height: 60px;
-  -webkit-animation: animate-preloader 1s linear infinite;
-  animation: animate-preloader 1s linear infinite;
+  -webkit-animation: animate-preloader 0.3s linear infinite;
+  animation: animate-preloader 0.3s linear infinite;
 }
 
 @-webkit-keyframes animate-preloader {
