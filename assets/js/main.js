@@ -8,6 +8,7 @@
 !(function($) {
   "use strict";
 
+  
 $(document).ready(function(){
   //dark-mode
       const options = {
@@ -25,7 +26,7 @@ $(document).ready(function(){
       }
 
       const darkmode = new Darkmode(options);
-      darkmode.showWidget();
+     // darkmode.showWidget();
 
 });
   $(window).on('load', function() {
