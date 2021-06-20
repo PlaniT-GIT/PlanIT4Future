@@ -144,7 +144,7 @@ $(document).ready(function() {
   });
  });
 
- 
+ $('#LoginPop').hide();
  $(document).click(function(event) { 
   var $target = $(event.target);
   if(!$target.closest('#GSP').length &&!$target.closest('#Loglink').length && !$target.closest('#LoginPop').length&& $('#LoginPop').is(":visible"))
