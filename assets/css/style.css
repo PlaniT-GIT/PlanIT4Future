@@ -1886,6 +1886,15 @@ slidesPerView: "auto" so the width of each slide set by CSS */
   width: 200px;
   height:200px;
 }
+#BeEco
+{
+  align-content: center;
+  background: url('../img/plain_logo_u.png') ;
+  background-size:cover;
+  padding:30px;  
+  width: auto;
+  height:100%;
+}
 
 #footer .footer-top .footer-newsletter form input[type="submit"]:hover {
   background: #149f6e;
